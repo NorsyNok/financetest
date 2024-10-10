@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Тестик</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h3 align="center" class="htext">Тестирование финансовой грамотности</h3>
+    </header>
+    <main>
+        <form>
+            <ol>
+                <li class="ltext">
+                    <h4 class="ltext">Заполните данные о себе:</h4>
+                    <div class="group">
+                        <input type="text" class="inp" required />
+                        <span class="highlight"></span>
+                        <label class="lab">Имя</label>
+                    </div>
+                    <div class="group">
+                        <input type="text" class="inp" required />
+                        <span class="highlight"></span>
+                        <label class="lab">Фамилия</label>
+                    </div>
+                    <div class="group">
+                        <input type="text" class="inp" required />
+                        <span class="highlight"></span>
+                        <label class="lab">Год рождения</label>
+                    </div>
+                </li>
+                <li class="ltext">
+                    <h4 class="ltext">Насколько тщательно распланирован ваш месячный бюджет?</h4>
+                    <label class="rlabel">
+                        <input type="radio" class="rinput" name="r1" />
+                        <div class="rdesign"></div>
+                        <div class="text">Практически каждый рубль распланирован</div>
+                    </label>
+
+                    <label class="rlabel">
+                        <input type="radio" class="rinput" name="r1" />
+                        <div class="rdesign"></div>
+                        <div class="text">Распланированы все основные покупки/затраты</div>
+                    </label>
+
+                    <label class="rlabel">
+                        <input type="radio" class="rinput" name="r1" />
+                        <div class="rdesign"></div>
+                        <div class="text">Накидан лишь общий план, только самые важные покупки</div>
+                    </label>
+
+                    <label class="rlabel">
+                        <input type="radio" class="rinput" name="r1" />
+                        <div class="rdesign"></div>
+                        <div class="text">Вообще не планирую</div>
+                    </label>
+
+                </li>
+                <li class="ltext">
+                    <h4 class="ltext">Откладываете ли вы часть своего дохода?</h4>
+                    <label class="rlabel">
+                        <input type="radio" class="rinput" name="r2" />
+                        <div class="rdesign"></div>
+                        <div class="text">Да, ежемесячно фиксированный процент</div>
+                    </label>
+                    <br />
+                    <label class="rlabel">
+                        <input type="radio" class="rinput" name="r2" />
+                        <div class="rdesign"></div>
+                        <div class="text">Да, откладываю, что остается в конце месяца</div>
+                    </label>
+                    <br />
+                    <label class="rlabel">
+                        <input type="radio" class="rinput" name="r2" />
+                        <div class="rdesign"></div>
+                        <div class="text">Откладываю, но не каждый месяц</div>
+                    </label>
+                    <br />
+                    <label class="rlabel">
+                        <input type="radio" class="rinput" name="r2" />
+                        <div class="rdesign"></div>
+                        <div class="text">Вообще не откладываю</div>
+                    </label>
+                    <br />
+                </li>
+                <li class="ltext">
+                    <h4 class="ltext">Какими финансовыми инструментами вы пользуютесь?</h4>
+                    <div class="text">
+                        <ul class="ks-cboxtags">
+                            <li>
+                                <input type="checkbox" id="checkbox1" value="Инвестиции в ценные бумаги (акции, облигации и тд)">
+                                <label for="checkbox1">Инвестиции в ценные бумаги (акции, облигации и тд)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox2" value="Вклады и накопительные счета в банках">
+                                <label for="checkbox2">Вклады и накопительные счета в банках</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox3" value="Вложение в инвестиционные фонды">
+                                <label for="checkbox3">Вложение в инвестиционные фонды</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox4" value="Краудфандинг">
+                                <label for="checkbox4">Краудфандинг</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox5" value="Вложение в знания (книги, образование)">
+                                <label for="checkbox5">Вложение в знания (книги, образование)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox6" value="Вложение в недвижимость">
+                                <label for="checkbox6">Вложение в недвижимость</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox7" value="Вложение в драгоценные металлы">
+                                <label for="checkbox7">Вложение в драгоценные металлы</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox8" value="Другое">
+                                <label for="checkbox8">Другое</label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="ltext">
+                    <h4 class="ltext"> Если вы выбрали вариант "другое", то расскажите в какими ещё финансовыми иснтрументами вы пользуютесь</h4>
+                    <textarea class="text" style="resize: none" cols="50" rows="10"></textarea>
+                </li>
+                <li class="ltext">
+                    <h4 class="ltext">Какова средняя доходность вашего капитала в год?</h4>
+                    <div class="box">
+                        <label for="select" class="text">Выберете один из вариантов: </label>
+                        <select id="select" class="text">
+                            <option class="text">0% и меньше</option>
+                            <option class="text">0-10%</option>
+                            <option class="text">10-15%</option>
+                            <option class="text">15-20%</option>
+                            <option class="text">20-30%</option>
+                            <option class="text">30% и выше</option>
+                        </select>
+                    </div>
+                </li>
+            </ol>
+            <div class="text">
+                <a class="bn" href="Test.html"><span class="bnspan">Очистка</span></a>
+                <button class="bn"><span class="bnspan">Отправить</span></button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
